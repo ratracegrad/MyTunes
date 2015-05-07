@@ -1,0 +1,80 @@
+body {
+  font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: url('musicbg.jpg');
+  background-size: cover;
+}
+
+.logo {
+  font-weight: 300;
+  font-size: 92px;
+  color: #5FA3A0;
+  margin-bottom: 30px;
+}
+
+.collection-heading {
+  font-size: 47px;
+  font-weight: 300;
+  color: #951C8F;
+}
+
+.container {
+  background: #FFFFFF;
+  margin-top: 70px;
+  padding: 20px;
+  border-radius: 20px;
+  border: 2px solid #CACACA;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+audio {
+  display: block;
+  margin: 0 auto;
+  width: 75%;
+}
+
+.table-numbers {
+  text-align: center;
+}
+
+.plus-one {
+  color:  white;
+  background: #3E6A23;
+  padding: 4px;
+  border-radius: 3px;
+  width: 30px;
+  margin: 0 auto;
+  border: 1px solid #CACACA;
+}
+
+.plus-one:hover {
+  color: #3E6A23;
+  background: white;
+  border: 1px solid #CACACA;
+  cursor: pointer;
+}
+
+
+.minus-one {
+  color: white;
+  background: #760000;
+  padding: 4px;
+  border-radius: 3px;
+  width: 28px;
+  margin: 0 auto;
+
+}
+
+.minus-one:hover {
+  color: #760000;
+  background: white;
+  border: 1px solid #CACACA;
+  cursor: pointer;
+
+}
+
+.add-to-queue {
+  cursor: pointer;
+}

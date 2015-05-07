@@ -1,6 +1,27 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>MyTunes</title>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300,400"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">">
+  </head>
   <body>
+    <link rel="stylesheet" href="styles/styles.css">
+    <div class="container">
+      <h1 class="logo"> MyTunes </h1>
+
+      <!-- <canvas width='600' height='150'></canvas> -->
+
+      <div class="library-container">
+        <table class="table table-striped library"> </table>
+      </div>
+
+      <div class="song-queue-container">
+        <h2 class="collection-heading">Song Queue</h2>
+        <table class="table table-striped song-queue"> </table>
+      </div>
+
+    </div>
     <!-- Scripts may be placed anywhere on a page. But FYI, they block rendering of elements
      below them until after the scripts load-->
     <script src="bower_components/jquery/jquery.min.js"></script>
@@ -8,6 +29,9 @@
     <script src="bower_components/backbone/backbone.js"></script>
 
     <script src="data/data.js"></script>
+
+    <script src="buffer-loader.js"></script>
+    <script src="visualizer.js"></script>
 
     <script src="models/SongModel.js"></script>
     <script src="collections/Songs.js"></script>
@@ -17,7 +41,10 @@
     <script src="views/PlayerView.js"></script>
     <script src="views/LibraryView.js"></script>
     <script src="views/LibraryEntryView.js"></script>
+    <script src="views/SongQueueView.js"></script>
+    <script src="views/SongQueueEntryView.js"></script>
     <script src="views/AppView.js"></script>
+    <script src="routers/Router.js"></script>
 
     <script>
       $(function(){
@@ -29,7 +56,12 @@
         var appView = new AppView({model: app});
 
         // put the view onto the screen
-        $('body').append(appView.render());
+        $('.library-container').append(appView.render());
+
+        var router = new Router();
+
+        Backbone.history.start({pushState: true});
+        
       });
     </script>
   </body>
