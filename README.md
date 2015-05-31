@@ -1,17 +1,3 @@
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
-
-- [MyTunes](#mytunes)
-  - [Technology Stack](#technology-stack)
-  - [Requirements](#requirements)
-  - [Installation](#installation)
-  - [Operation](#operation)
-  - [Live Preview](#live-preview)
-  - [Screenshot](#screenshot)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
 # MyTunes
 > My implementation of a browser based music player using Backbone.JS and Twitter Bootstrap. 
 
@@ -22,6 +8,16 @@ audio controls for the song currently playing and a Song Queue view.
 
 > Styling is handled primarily by the Twitter Bootstrap CSS. I have added some custom styling to 
 override the Boostrap settings in the styles.css file.
+
+**Table of Contents**  
+
+- [MyTunes](#mytunes)
+  - [Technology Stack](#technology-stack)
+  - [Requirements](#requirements)
+  - [Installation](#installation)
+  - [Operation](#operation)
+  - [Live Preview](#live-preview)
+  - [Screenshot](#screenshot)
 
 ## Technology Stack
 1. Backbone.js
